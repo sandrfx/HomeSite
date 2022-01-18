@@ -1,4 +1,4 @@
-firebase.json
 *.log
 public/google*
 public/yandex*
+.firebaserc
