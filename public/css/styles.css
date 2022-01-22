@@ -10318,7 +10318,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 3rem 0;
+  padding: 3rem 0.75rem;
   background: linear-gradient(to bottom, #101011 0%, #101011 75%, #101011d9 100%);
 }
 
