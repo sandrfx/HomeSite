@@ -3966,7 +3966,7 @@ input[type=button].btn-block {
   list-style: none;
 }
 
-.nav-link {
+.nav-link, .nav-text  {
   display: block;
   padding: 0.5rem 1rem;
 }
@@ -4095,6 +4095,28 @@ input[type=button].btn-block {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+}
+
+.lang-link {
+  color: rgba(255, 255, 255, 0.75);
+  margin-right: 0.5rem;
+}
+
+.lang-link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+  .hide-on-collapse {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .show-on-collapse {
+    display: none;
+  }
 }
 
 .navbar-toggler {
@@ -10204,7 +10226,7 @@ body {
     padding: 1.5rem 1.5rem 1.25rem;
     color: rgba(255, 255, 255, 0.8);
   }
-  #mainNav .nav-link {
+  #mainNav .nav-link, #mainNav .nav-text {
     transition: none;
     padding: 1.5rem 1.5rem 1.5rem;
     color: rgba(255, 255, 255, 0.75);
