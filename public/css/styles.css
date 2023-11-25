@@ -3035,7 +3035,7 @@ input[type="button"].btn-block {
   /* padding-top: 0.3125rem;
   padding-bottom: 0.3125rem; */
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: inherit;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -7233,11 +7233,13 @@ h3 {
     line-height: 3.1rem; }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-family: "SB Heading", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700; }
   #mainNav .navbar-desc {
+    font-size: 0.8em;
+    font-weight: 300;
     color: #fff; }
   #mainNav .navbar-brand {
     color: #fff; }
@@ -7280,7 +7282,7 @@ h3 {
     #mainNav.navbar-shrink .navbar-desc {
       font-size: 0.9em; } 
     #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em; } }
+      font-size: 1.4em; } }
 
 .masthead {
   padding-top: calc(6rem + 74px);
@@ -7426,3 +7428,15 @@ form .row:first-child .floating-label-form-group {
 
 .bg-black {
   background-color: #000; }
+
+img.avatar {
+  max-width: 220px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  img.avatar {
+    max-width: 300px;
+    height: auto;
+  } 
+}
