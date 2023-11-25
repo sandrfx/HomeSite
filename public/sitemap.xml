@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://bilchuk.ru/index.html</loc>
-        <lastmod>2022-02-21</lastmod>
-    </url>
-    <url>
-        <loc>http://bilchuk.ru/en/index.html</loc>
-        <lastmod>2022-02-21</lastmod>
-    </url>
-    <url>
-        <loc>http://bilchuk.ru/files/cv.pdf</loc>
-        <lastmod>2022-02-17</lastmod>
+        <loc>http://alex-bilchuk.com/index.html</loc>
+        <lastmod>2023-11-25</lastmod>
     </url>
 </urlset>
