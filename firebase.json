@@ -11,6 +11,12 @@
         "source": "**",
         "destination": "/index.html"
       }
+    ],
+    "redirects": [ {
+        "source": "/en",
+        "destination": "/",
+        "type": 301
+      }
     ]
   }
 }
