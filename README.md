@@ -1,8 +1,5 @@
 # HomeSite
-The source code of my home site: https://bilchuk.ru
-
-![Alt text](/screenshot.png?raw=true "HomeSite screenshot")
-
+The source code of my home website: https://alex-bilchuk.com.
 
 License
 -----
