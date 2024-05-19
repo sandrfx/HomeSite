@@ -7265,6 +7265,7 @@ h3 {
       font-size: 1.25em;
       transition: font-size 0.3s; }
     #mainNav .navbar-brand {
+      font-weight: 300;
       font-size: 1.75em;
       transition: font-size 0.3s; }
     #mainNav .navbar-nav {
