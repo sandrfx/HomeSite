@@ -7184,11 +7184,20 @@ h3 {
     line-height: 2rem; } }
 
 .divider-custom {
-  margin: 0.5rem 0 0.5rem;
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+@media (min-width: 768px) {
+  .divider-custom {
+    margin: 0.25rem 0 0.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+}
 
 @media (min-width: 992px) {
   .divider-custom {
