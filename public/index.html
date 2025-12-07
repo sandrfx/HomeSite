@@ -1,379 +1,655 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Alexander Bilchuk. Head of Engineering. Homepage">
-        <meta name="author" content="Alexander Bilchuk">
-        <meta property="og:title" content="Alexander Bilchuk - Head of Engineering" data-react-helmet="true"/>
-        <meta property="og:description" content="I have held Mobile Tech Lead, Head of Mobile and CTO positions in such companies as Sber, SberTech, Samsung Electronics, Lingualeo, etc." data-react-helmet="true"/> 
-        <title>ALEX BILCHUK – Head of Engineering. Homepage</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/styles.css?ref=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-    </head>
-    <body id="page-top">
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top navbar-shrink" id="mainNav">
+<head>
+    <meta charset="UTF-8">
+    <title>Alex Bilchuk – Head of Engineering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    >
+
+    <!-- Google Fonts / Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Flex:wght@500;700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg md-top-app-bar fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex flex-column" href="#">
+                <span>ALEX BILCHUK</span>
+                <span>Head of Engineering</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" id="navButtonProjects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" id="navButtonAbout">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="navButtonContacts">Message me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero-section">
             <div class="container">
-                <div class="d-flex flex-column">
-                    <a class="navbar-brand js-scroll-trigger" href="#page-top">ALEX BILCHUK</a>
-                    <span class="navbar-desc text-white-80">Head of Engineering</span>
+                <div class="hero-card p-4 p-md-5">
+                    <div class="row align-items-center gy-4">
+                        <div class="col-lg-7 position-relative">
+                            <div class="primary-chip mb-3">
+                                <span class="material-symbols-outlined">architecture</span>
+                                Mobile Architecture • Leadership
+                            </div>
+                            <h1 class="hero-title mb-3">
+                                Designing scalable<br>mobile platforms for millions of users
+                            </h1>
+                            <p class="hero-subtitle">
+                                Head of Engineering • Mobile Architecture Unit Lead
+                            </p>
+                            <p class="mt-3 mb-4">
+                                Over 15 years in IT and more than a decade in mobile development and management.
+                                I help companies build resilient mobile platforms, strong engineering teams, and
+                                product-focused development processes.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a href="#contact" class="btn btn-md-primary">
+                                    <span class="material-symbols-outlined me-1">mail</span>
+                                    Message me
+                                </a>
+                                <a href="#projects" class="btn btn-md-tonal">
+                                    <span class="material-symbols-outlined me-1">work</span>
+                                    View projects
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 d-flex justify-content-lg-end justify-content-center">
+                            <div class="md-card border-0" style="max-width: 320px;">
+                                <h6 class="text-uppercase mb-3" style="letter-spacing: 0.14em; font-size: 0.8rem; color: rgba(230,224,233,0.7);">
+                                    Selected companies
+                                </h6>
+                                <ul class="list-unstyled mb-0 small">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <span class="material-symbols-outlined me-2">sell</span>
+                                        Avito (Head of Engineering / Mobile Architecture Unit Lead)
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <span class="material-symbols-outlined me-2">account_balance</span>
+                                        Gazprombank (Managing Director / CTO Mobile)
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <span class="material-symbols-outlined me-2">payments</span>
+                                        SberBank (Executive Director / IT Cluster Lead)
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <span class="material-symbols-outlined me-2">school</span>
+                                        Lingualeo (Chief Technology Officer)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navButtonProjects" href="#portfolio">PROJECTS</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navButtonAbout" href="#aboutMe">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" id="navButtonContacts" href="#contact">MESSAGE ME</a>
-                        </li>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="md-section-title">Projects & Experience</h2>
+                <div class="row g-4">
+
+                    <!-- Avito -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/avito.png" alt="Avito">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Avito</div>
+                                    <div class="md-card-subtitle">
+                                        Head of Engineering / Mobile Architecture Unit Lead
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Leading mobile platform engineering at one of the largest classified services
+                                with a daily audience of over 25M users.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2022 – present
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#avitoModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Gazprombank -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/gpb.png" alt="Gazprombank">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Gazprombank</div>
+                                    <div class="md-card-subtitle">
+                                        Managing Director / CTO Mobile
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Drove the launch of new mobile apps for retail customers and reshaped digital
+                                development processes using Agile at scale.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2021 – 2022
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#gpbModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- SberBank Online -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/sbol.jpg" alt="SberBank Online">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">SberBank Online</div>
+                                    <div class="md-card-subtitle">
+                                        Executive Director / IT Cluster Lead
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Built and managed product teams delivering new social and government-services
+                                features for SberBank Online across iOS, Android and Web.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2019 – 2021
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#sbolModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Lingualeo -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/lingualeo.png" alt="Lingualeo">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Lingualeo</div>
+                                    <div class="md-card-subtitle">
+                                        Chief Technology Officer
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Led development of the next generation of the language-learning platform,
+                                coordinating backend, frontend and mobile teams.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2017 – 2019
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#llModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- SberBank Business Online -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/sbbol.png" alt="SberBank Business Online">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">SberBank Business Online</div>
+                                    <div class="md-card-subtitle">
+                                        Android Team Lead
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Managed the creation of a new Android app for corporate clients and designed
+                                the architecture of the solution.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2015 – 2016
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#sbbolModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Samsung Mobile Print -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/samsung-mobile-print.jpeg"
+                                        alt="Samsung Mobile Print">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Samsung Mobile Print</div>
+                                    <div class="md-card-subtitle">
+                                        Android Team Lead / Software Engineer
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Worked on printing apps for Samsung smart printers, leading Android teams and
+                                maintaining mobile products and infrastructure.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2013 – 2014
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#smpModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Samsung SecuThru -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/secuthru.png" alt="Samsung SecuThru">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Samsung SecuThru</div>
+                                    <div class="md-card-subtitle">
+                                        Software Engineer
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Developed features for a secure printing platform and its mobile interface,
+                                including communication protocols and internal tools.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2011 – 2013
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#secuModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Netcracker -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="md-card">
+                            <header class="md-card-header">
+                                <div class="brand-logo">
+                                    <img src="https://alex-bilchuk.com/assets/img/netcracker.jpg" alt="Netcracker">
+                                </div>
+                                <div>
+                                    <div class="md-card-title">Netcracker</div>
+                                    <div class="md-card-subtitle">
+                                        Java Developer
+                                    </div>
+                                </div>
+                            </header>
+                            <p class="md-supporting-text mb-3">
+                                Took part in the development of core platform components and web UI for
+                                telecom solutions.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto pt-2">
+                                <span class="md-pill">
+                                    <span class="material-symbols-outlined">calendar_month</span>
+                                    2007 – 2008
+                                </span>
+                                <button class="btn btn-link p-0 text-decoration-none"
+                                        data-bs-toggle="modal" data-bs-target="#netModal">
+                                    Details
+                                    <span class="material-symbols-outlined" style="font-size: 18px;">arrow_outward</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="md-section-title">About me</h2>
+                <div class="about-card p-4 p-md-5">
+                    <div class="row gy-4 align-items-start">
+                        <div class="col-lg-8">
+                            <p>
+                                As Head of Engineering of the Mobile Architecture Unit at Avito, I focus on
+                                designing service architectures that support mobile-first products, forming
+                                high-performing teams, and aligning technology with business goals.
+                            </p>
+                            <p>
+                                I’ve built and led platform teams for Android, iOS and backend, defined
+                                technical strategies and roadmaps, and overseen large-scale transformations
+                                in banks, consumer services and product companies.
+                            </p>
+                            <p>
+                                My expertise spans mobile architecture, enterprise solutions and Agile
+                                practices. I’m continuously refining engineering culture, developer
+                                experience and platform reliability so that product teams can move fast
+                                with confidence.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="md-card">
+                                <h6 class="text-uppercase mb-3" style="letter-spacing: 0.14em; font-size: 0.8rem; color: rgba(230,224,233,0.7);">
+                                    Focus areas
+                                </h6>
+                                <ul class="small mb-0">
+                                    <li class="mb-2">Mobile platform architecture for large product portfolios</li>
+                                    <li class="mb-2">Scaling engineering organizations and platform teams</li>
+                                    <li class="mb-2">Agile transformation and product development processes</li>
+                                    <li>Developer experience, tooling and technical strategy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-4 py-md-5">
+            <div class="container">
+                <h2 class="md-section-title">Message me</h2>
+                <div class="contact-card p-4 p-md-5">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-md-auto text-center text-md-start">
+                            <div class="contact-photo mb-3 mb-md-0">
+                                <img src="https://alex-bilchuk.com/assets/img/photo-conf.png"
+                                    alt="Alex Bilchuk">
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <p class="mb-3">
+                                Interested in mobile platform strategy, large-scale app architecture or
+                                building engineering organizations? Feel free to reach out.
+                            </p>
+                            <div class="d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+                                <span class="material-symbols-outlined">mail</span>
+                                <a class="contact-link" href="mailto:me@alex-bilchuk.com" id="linkEmail">me@alex-bilchuk.com</a>
+                                <span class="d-none d-sm-inline">•</span>
+                                <span class="material-symbols-outlined">link</span>
+                                <div class="d-flex flex-wrap gap-3">
+                                    <a href="https://www.linkedin.com/in/alexanderbilchuk" class="contact-link" id="linkLinkedIn">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <span>© Alexander Bilchuk <span id="year"></span></span>
+        </div>
+    </footer>
+
+    <!-- MODALS (details per project) -->
+
+    <!-- Avito -->
+    <div class="modal fade" id="avitoModal" tabindex="-1" aria-labelledby="avitoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="avitoModalLabel">Avito — Head of Engineering / Mobile Architecture Unit Lead</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Built a new mobile platform used by multiple business verticals and over a hundred product teams.</li>
+                        <li>Formed a platform unit of 4 teams and 40+ senior engineers from scratch.</li>
+                        <li>Designed a scalable architecture for mobile apps aligned with a mobile-first strategy.</li>
+                        <li>Defined technical strategy and long-term roadmap for the mobile platform.</li>
                     </ul>
                 </div>
             </div>
-        </nav>
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <div class="divider-custom"></div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Avito</div>
-                            </div><img class="img-fluid" src="assets/img/avito.png" alt="Avito"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gpbModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Gazprombank</div>
-                            </div><img class="img-fluid" src="assets/img/gpb.png" alt="GPB"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#sberBankMobileModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">SberBank Online</div>
-                            </div><img class="img-fluid" src="assets/img/sbol.jpg" alt="SBOL"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#lingualeoModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Lingualeo</div>
-                            </div><img class="img-fluid" src="assets/img/lingualeo.png" alt="Lingualeo"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#sbbolModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">SberBank Business</div>
-                            </div><img class="img-fluid" src="assets/img/sbbol.png" alt="SBBOL"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#smpModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Samsung Mobile Print</div>
-                            </div><img class="img-fluid" src="assets/img/samsung-mobile-print.jpeg" alt="Samsung Mobile Print"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#secuThruModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Samsung SecuThru</div>
-                            </div><img class="img-fluid" src="assets/img/secuthru.png" alt="Samsung SecuThru"/>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 mb-3 px-2">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#ncModal">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Netcracker</div>
-                            </div><img class="img-fluid" src="assets/img/netcracker.jpg" alt="Netcracker"/>
-                        </div>
-                    </div>
+        </div>
+    </div>
+
+    <!-- Gazprombank -->
+    <div class="modal fade" id="gpbModal" tabindex="-1" aria-labelledby="gpbModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="gpbModalLabel">Gazprombank — Managing Director / CTO Mobile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
-        </section>
-        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Avito</h2>
-                                    <p><b>Role:</b> Head of Engineering / Mobile Architecture Unit Lead<br/>2022 – up to now</p>
-                                    <p>Avito (ex-OLX) is a classified advertisements platform that allows users to buy and sell used cars, clothes, real estate, and other accessories, with a DAU of 25M+ users.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed to develop a brand-new mobile technological platform for five business verticals and over 120 product teams at Avito in alignment with the company’s mobile-first strategy and goals</li>    
-                                        <li class="list-group-item">Managed to create a new platform unit consisting of 4 teams and 40+ senior platform engineers from scratch</li>
-                                        <li class="list-group-item">Designed a new scalable architecture for mobile apps</li>
-                                        <li class="list-group-item">Formulated a technical strategy and a development roadmap for the mobile platform</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Led the development of new mobile banking apps for retail customers.</li>
+                        <li>Rebuilt development processes in the Digital Business unit using Agile practices.</li>
+                        <li>Created technical strategy and platform roadmap for mobile applications.</li>
+                        <li>Restructured teams and launched technical competence centers and platform teams.</li>
+                        <li>Contributed to enterprise-wide Agile transformation and launched mobile development in 11 Agile teams.</li>
+                        <li>Designed architecture for mobile apps, middleware and core backend services.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="gpbModal" tabindex="-1" role="dialog" aria-labelledby="#gpbModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Gazprombank</h2>
-                                    <p><b>Role:</b> Managing Director / CTO Mobile<br/>2021 – 2022</p>
-                                    <p>Gazprombank is one of Russia's largest and most diverse financial institutions. It offers a wide range of products and services to corporate and private customers, financial institutions, and institutional and private investors. The bank serves over 4 million individuals and 92,000 legal entities.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed the development of brand-new mobile applications for individual customers</li>    
-                                        <li class="list-group-item">Revamped the entire development process in the Digital Business Department using Agile methodologies</li>
-                                        <li class="list-group-item">Formulated a technical strategy and a platform development roadmap for mobile applications</li>
-                                        <li class="list-group-item">Restructured teams, established technical centers of competence and platform teams</li>
-                                        <li class="list-group-item">Played a key role in the global Agile transformation of the Bank, supervised the launch of mobile development in 11 Agile teams </li>
-                                        <li class="list-group-item">Designed a new scalable architecture for mobile apps, middle back, and core backend services</li>
-                                        <li class="list-group-item">Defined a technical strategy and roadmap for optimizing the performance of a new corporate Backend-Driven UI System</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- SberBank Online -->
+    <div class="modal fade" id="sbolModal" tabindex="-1" aria-labelledby="sbolModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="sbolModalLabel">SberBank Online — Executive Director / IT Cluster Lead</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Managed development of new social features for individuals on SberBank Online (iOS, Android, Web).</li>
+                        <li>Led several cross-functional teams in the Social Solutions cluster using Agile.</li>
+                        <li>Redesigned development processes inside the cluster.</li>
+                        <li>Defined both technical and product strategy for the area.</li>
+                        <li>Oversaw tech debt management and migration to new versions of the SberBank Platform.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="sberBankMobileModal" tabindex="-1" role="dialog" aria-labelledby="#sberBankMobileModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">SberBank Online</h2>
-                                    <p><b>Role:</b> Executive Director / IT Cluster Lead<br/>2019 – 2021</p>
-                                    <p>SberBank is the largest bank in Russia, Central and Eastern Europe, and one of the leading financial institutions worldwide.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed the development of new social services for individuals in SberBank Online app for iOS, Android, and Web </li>
-                                        <li class="list-group-item">Managed 4 development teams within the SberBank Online Social Solutions cluster using Agile methodology</li>
-                                        <li class="list-group-item">Revamped the entire development process in the Social Solutions cluster</li>
-                                        <li class="list-group-item">Formulated a technical and product strategy</li>
-                                        <li class="list-group-item">Designed Agile teams in the Social Solutions cluster</li>
-                                        <li class="list-group-item">Oversaw tech debt and planning refactoring processes for migrating to new versions of the SberBank Platform</li>
-                                        <li class="list-group-item">Launched new features for interacting with government agencies (State Services)</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- Lingualeo -->
+    <div class="modal fade" id="llModal" tabindex="-1" aria-labelledby="llModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="llModalLabel">Lingualeo — Chief Technology Officer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Led the development of Lingualeo 3.0, a new generation of the service.</li>
+                        <li>Managed backend, frontend, Android, iOS and QA teams.</li>
+                        <li>Set up engineering and QA processes and collaboration with product teams.</li>
+                        <li>Designed service architecture and coordinated work with out-staff partners.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="lingualeoModal" tabindex="-1" role="dialog" aria-labelledby="#lingualeoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Lingualeo</h2>
-                                    <p><b>Role:</b> Chief Technology Officer<br/>2017 – 2019</p>
-                                    <p>Lingualeo is an efficient and user-friendly language-learning service with numerous tools and techniques for Web, iOS, and Android, built on game mechanics.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed the development of Lingualeo 3.0 – the next generation of Lingualeo service</li>
-                                        <li class="list-group-item">Led the Development Department, which included Backend, Frontend, Android, iOS, and QA</li>
-                                        <li class="list-group-item">Established development and QA processes, as well as a collaboration between the product and core development teams</li>
-                                        <li class="list-group-item">Formulated technical strategy for the Development Department</li>
-                                        <li class="list-group-item">Designed the architecture of Lingualeo services</li>
-                                        <li class="list-group-item">Managed the development process with out-staff engineers, which involved sourcing organizations, interviewing specialists, negotiating and maintaining contracts, and overseeing the acceptance process and collaboration with the in-house team</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- SberBank Business Online -->
+    <div class="modal fade" id="sbbolModal" tabindex="-1" aria-labelledby="sbbolModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="sbbolModalLabel">SberBank Business Online — Android Team Lead</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Led development of a new Android app for corporate clients.</li>
+                        <li>Managed the Android team within the project using Agile.</li>
+                        <li>Introduced Agile practices for the whole mobile development department.</li>
+                        <li>Designed the app architecture for SberBank Business Online.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="sbbolModal" tabindex="-1" role="dialog" aria-labelledby="#sbbolModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">SberBank Business Online</h2>
-                                    <p><b>Role:</b> Android Team Lead<br/>2015 – 2016</p>
-                                    <p>SberBank is the largest bank in Russia, Central and Eastern Europe, and one of the leading financial institutions worldwide.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed the development of a brand-new Android mobile application for corporate customers</li>
-                                        <li class="list-group-item">Managed the Android development team of the SberBank Business Online project using Agile methodologies</li>
-                                        <li class="list-group-item">Built a development process and implementation of Agile practices for the entire mobile development department</li>
-                                        <li class="list-group-item">Designed the architecture of the SberBank Business Online Android app</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- Samsung Mobile Print -->
+    <div class="modal fade" id="smpModal" tabindex="-1" aria-labelledby="smpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="smpModalLabel">Samsung Mobile Print — Android Team Lead / Software Engineer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Led Android development for the Mobile Print app.</li>
+                        <li>Planned roadmaps and coordinated several Samsung printing apps.</li>
+                        <li>Developed new features, maintained codebase and tests.</li>
+                        <li>Configured CI jobs and created technical documentation.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="smpModal" tabindex="-1" role="dialog" aria-labelledby="#smpModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Samsung Mobile Print</h2>
-                                    <p><b>Role:</b> Android Team Lead / Software Engineer<br/>2013 – 2014</p>
-                                    <p>Mobile Print is an iOS and Android app for printing on Samsung smart printers.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Managed the development of Samsung Mobile Print app for Android</li>
-                                        <li class="list-group-item">Managed Mobile projects and led the Android team in the Printing Software Group</li>
-                                        <li class="list-group-item">Developed project plans and roadmaps for Samsung Printing Mobile Apps</li>
-                                        <li class="list-group-item">Worked on developing new features and maintaining code for Samsung Mobile Print for Android and Samsung Cloud Print for iOS</li>
-                                        <li class="list-group-item">Participated in code reviews</li>
-                                        <li class="list-group-item">Developed unit and integration tests</li>
-                                        <li class="list-group-item">Developed technical documentation</li>
-                                        <li class="list-group-item">Set up Jenkins build jobs</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- Samsung SecuThru -->
+    <div class="modal fade" id="secuModal" tabindex="-1" aria-labelledby="secuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="secuModalLabel">Samsung SecuThru — Software Engineer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Developed and maintained features for the SecuThru Pro secure printing solution.</li>
+                        <li>Worked on the Pro Mobile web client.</li>
+                        <li>Implemented a secure communication protocol between services and devices.</li>
+                        <li>Created internal tools for load testing and device emulation.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="secuThruModal" tabindex="-1" role="dialog" aria-labelledby="#secuThruModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Samsung SecuThru</h2>
-                                    <p><b>Role:</b> Software Engineer<br/>2011 – 2013</p>
-                                    <p>SecuThru is a server-based solution for secure corporate printing.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Developed new features and maintained code of SecuThru Pro, a corporate web-based secure printing solution (Java, Spring, Hibernate, OSGi, ActionScript/Flex)</li>
-                                        <li class="list-group-item">Developed SecuThru Pro Mobile (JavaScript, JQuery, JQuery Mobile)</li>
-                                        <li class="list-group-item">Designed and developed the implementation of a secure communication protocol for communication between SecuThru Pro, SecuThru Pro Mobile, and printing devices (REST/JSON)</li>
-                                        <li class="list-group-item">Developed internal tools for load testing and printing device emulation (Java, Python)</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </div>
+
+    <!-- Netcracker -->
+    <div class="modal fade" id="netModal" tabindex="-1" aria-labelledby="netModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title" id="netModalLabel">Netcracker — Java Developer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-1 pb-4">
+                    <ul class="small mb-0">
+                        <li>Worked on core platform features for telecom solutions.</li>
+                        <li>Contributed to the web UI and design system.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="portfolio-modal modal fade" id="ncModal" tabindex="-1" role="dialog" aria-labelledby="#ncModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl" role="document">
-                <div class="modal-content">
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
-                    <div class="modal-body text-center">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 text-left">
-                                    <h2 class="portfolio-modal-title text-secondary mb-4">Netcracker</h2>
-                                    <p><b>Role:</b> Java Developer<br/>2007 – 2008</p>
-                                    <p>Netcracker delivers market-leading, next-gen BSS, OSS, cloud, 5G, IoT, SDN/NFV and other mission-critical solutions to service providers around the globe.</p>
-                                    <ul class="list-group mb-4">
-                                        <li class="list-group-item">Developed new features and maintained code of core NetCracker platform (J2EE)</li>
-                                        <li class="list-group-item">Developed features for the new Web User Interface and Design System (JSP/Servlets, HTML, JavaScript, XML/XSLT)</li>
-                                    </ul>
-                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i> Close Window</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="page-section bg-secondary text-white mb-0" id="aboutMe">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">About me</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-white-80">
-                        <p class="pre-wrap lead">As Head of Engineering of Mobile Architecture Unit at Avito, Russia’s largest online classifieds platform, I design and implement service architecture that supports mobile-first solutions, organize and lead agile teams, build development processes, and ensure IT support for business objectives. I have over 15 years of experience in IT, including more than 10 years in mobile development and management.</p>
-                        <p class="pre-wrap lead">I am passionate about creating innovative and user-friendly mobile applications that solve real-world problems and deliver customer value. I have developed and overseen a range of mobile projects for both large multinational corporations and startups, including Gazprombank, Sber, Lingualeo, and Samsung Electronics. I have also established and supervised platform teams for Android and iOS, as well as core backend services. I have expertise in mobile architecture, enterprise solutions, and agile methodologies, and I constantly seek to improve my skills and knowledge in this dynamic and evolving field.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">Message me</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column align-items-center">
-                            <div class="mb-4"><img class="rounded-circle border avatar" src="assets/img/photo-conf.png" alt="My Photo"/></div>
-                            <div class="text-muted">Email</div><a class="lead font-weight-bold" target="_blank" id="linkEmail" href="mailto:me@alex-bilchuk.com">me@alex-bilchuk.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer text-center bg-secondary">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <h4 class="mb-4">AROUND THE WEB</h4>
-                        <a class="btn btn-dark btn-social mx-1" target="_blank" id="linkLinkednIn" href="https://www.linkedin.com/in/alexanderbilchuk/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-dark btn-social mx-1" target="_blank" id="linkGitHub" href="https://github.com/sandrfx"><i class="fab fa-github"></i></a>
-                        <a class="btn btn-dark btn-social mx-1" target="_blank" id="linkStackOverflow" href="https://stackoverflow.com/users/7315969/alexander-bilchuk?tab=profile"><i class="fab fa-stack-overflow"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container"><small class="pre-wrap">Copyright © Alexander Bilchuk <span id="year"></span></small></div>
-        </section>
-        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
-        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="/__/firebase/8.6.5/firebase-app.js"></script>
-        <!-- Firebase Analytics -->
-        <script src="/__/firebase/8.6.5/firebase-analytics.js"></script>
-        <!-- Firebase Performance Monitoring library -->
-        <script src="/__/firebase/8.6.5/firebase-performance.js"></script>
-        <!-- Initialize Firebase -->
-        <script src="/__/firebase/init.js"></script>
-        <!-- Initialize Performance Monitoring and Firebase Analytics -->
-        <script src="js/analytics.js"></script>
-        <!-- Update date for copyright -->
-        <script>
-            document.getElementById("year").innerHTML = new Date().getFullYear();
-        </script>
-    </body>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.6.5/firebase-app.js"></script>
+    <!-- Firebase Analytics -->
+    <script src="/__/firebase/8.6.5/firebase-analytics.js"></script>
+    <!-- Firebase Performance Monitoring library -->
+    <script src="/__/firebase/8.6.5/firebase-performance.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- Initialize Performance Monitoring and Firebase Analytics -->
+    <script src="js/analytics.js"></script>
+    <!-- Update date for copyright -->
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
 </html>

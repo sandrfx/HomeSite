@@ -22,14 +22,6 @@
                 analytics.logEvent('linkEmail_click');
                 console.log('linkEmail_click event sent');
             });
-            $('#linkStackOverflow').click(function() {
-                analytics.logEvent('linkStackOverflow_click');
-                console.log('linkStackOverflow_click event sent');
-            });
-            $('#linkGitHub').click(function() {
-                analytics.logEvent('linkGitHub_click');
-                console.log('linkGitHub_click event sent');
-            });
             $('#linkLinkednIn').click(function() {
                 analytics.logEvent('linkLinkednIn_click');
                 console.log('linkLinkednIn_click event sent');
