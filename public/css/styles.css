@@ -25,6 +25,10 @@
                         0 2px 4px rgba(0,0,0,0.7);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     background:
@@ -54,7 +58,7 @@ body {
 .navbar-brand span:last-child {
     font-size: 0.85rem;
     opacity: 0.85;
-    color: rgba(230, 224, 233, 0.7); /* fixed sub-header color */
+    color: rgba(230, 224, 233, 0.7);
 }
 
 .nav-link {
@@ -332,4 +336,10 @@ footer {
     .hero-card {
         border-radius: 0;
     }
+}
+
+#projects,
+#about,
+#contact {
+    scroll-margin-top: 96px;
 }
