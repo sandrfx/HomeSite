@@ -332,12 +332,6 @@ footer {
     vertical-align: middle;
 }
 
-@media (max-width: 575.98px) {
-    .hero-card {
-        border-radius: 0;
-    }
-}
-
 #projects,
 #about,
 #contact {
