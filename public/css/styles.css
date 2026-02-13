@@ -1,338 +1,430 @@
-:root {
-    /* MD3 dark-ish palette */
-    --md-sys-color-primary: #D0BCFF;
-    --md-sys-color-on-primary: #381E72;
-    --md-sys-color-primary-container: #4F378B;
-    --md-sys-color-on-primary-container: #EADDFF;
+/* =====================================================================
+   alex-bilchuk.com — Styles (Bootstrap 5) themed to resemble
+   developer.android.com (clean, Google-like, light)
+   - Keep existing class hooks used by the site
+   - Primary: Google blue
+   ===================================================================== */
 
-    --md-sys-color-secondary: #CCC2DC;
-    --md-sys-color-on-secondary: #332D41;
-    --md-sys-color-secondary-container: #4A4458;
-    --md-sys-color-on-secondary-container: #E8DEF8;
+/* 0) Theme tokens (Google-like light) */
+:root{
+  /* Color roles */
+  --md-sys-color-primary: #1A73E8;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #E8F0FE;
+  --md-sys-color-on-primary-container: #174EA6;
 
-    --md-sys-color-surface: #141218;
-    --md-sys-color-surface-variant: #49454F;
-    --md-sys-color-on-surface: #E6E0E9;
-    --md-sys-color-outline: #938F99;
+  --md-sys-color-secondary: #5F6368;
+  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-secondary-container: #F1F3F4;
+  --md-sys-color-on-secondary-container: #202124;
 
-    --md-radius-xl: 28px;
-    --md-radius-lg: 24px;
-    --md-radius-md: 16px;
+  --md-sys-color-tertiary: #188038;
+  --md-sys-color-on-tertiary: #FFFFFF;
+  --md-sys-color-tertiary-container: #E6F4EA;
+  --md-sys-color-on-tertiary-container: #137333;
 
-    --md-shadow-level1: 0 1px 3px rgba(0,0,0,0.7),
-                        0 1px 2px rgba(0,0,0,0.6);
-    --md-shadow-level2: 0 6px 12px rgba(0,0,0,0.75),
-                        0 2px 4px rgba(0,0,0,0.7);
+  --md-sys-color-error: #D93025;
+  --md-sys-color-on-error: #FFFFFF;
+
+  --md-sys-color-background: #FFFFFF;
+  --md-sys-color-on-background: #202124;
+
+  --md-sys-color-surface: #FFFFFF;
+  --md-sys-color-on-surface: #202124;
+  --md-sys-color-surface-variant: #F1F3F4;
+  --md-sys-color-on-surface-variant: #5F6368;
+
+  --md-sys-color-outline: #DADCE0;
+  --md-sys-color-outline-variant: #E8EAED;
+
+  /* Shape (closer to dev.android.com than “bubbly expressive”) */
+  --md-radius-xl: 24px;
+  --md-radius-lg: 16px;
+  --md-radius-md: 12px;
+  --md-radius-sm: 10px;
+
+  /* Elevation (subtle) */
+  --md-shadow-level1: 0 1px 2px rgba(60,64,67,.10), 0 1px 3px rgba(60,64,67,.08);
+  --md-shadow-level2: 0 4px 10px rgba(60,64,67,.14), 0 2px 6px rgba(60,64,67,.10);
+
+  /* Type */
+  --md-font-sans: "Google Sans", "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --md-font-body: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+
+  /* Motion */
+  --md-t: 160ms;
+  --md-ease: cubic-bezier(.2,0,0,1);
+
+  /* Layout */
+  --md-container-max: 1200px;
 }
 
-html {
-    scroll-behavior: smooth;
+/* 1) Global */
+html{ scroll-behavior:smooth; }
+body{
+  font-family: var(--md-font-body);
+  background: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background:
-        radial-gradient(circle at top left, rgba(103, 80, 164, 0.55) 0, transparent 45%),
-        radial-gradient(circle at top right, rgba(208, 188, 255, 0.18) 0, transparent 50%),
-        radial-gradient(circle at bottom, rgba(3, 218, 198, 0.08) 0, transparent 55%),
-        #0F0D13;
-    color: var(--md-sys-color-on-surface);
+a{
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+}
+a:hover{ text-decoration: underline; }
+
+::selection{
+  background: color-mix(in srgb, var(--md-sys-color-primary) 18%, white);
 }
 
-/* Top App Bar */
-.md-top-app-bar {
-    background: rgba(20, 18, 24, 0.92);
-    backdrop-filter: blur(18px);
-    border-bottom: 1px solid rgba(147, 143, 153, 0.5);
+/* Match Bootstrap container width to the “docs” feel */
+.container{ max-width: var(--md-container-max); }
+
+/* 2) Top App Bar (navbar) */
+.md-top-app-bar,
+.navbar{
+  background: rgba(255,255,255,.92) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--md-sys-color-outline);
 }
 
-.navbar-brand span:first-child {
-    font-family: "Roboto Flex", "Roboto", system-ui, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    color: var(--md-sys-color-primary);
+.navbar-brand,
+.navbar-brand span:first-child{
+  font-family: var(--md-font-sans);
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: var(--md-sys-color-on-surface);
+  font-size: 0.9rem;
 }
 
-.navbar-brand span:last-child {
-    font-size: 0.85rem;
-    opacity: 0.85;
-    color: rgba(230, 224, 233, 0.7);
+.navbar-brand span:last-child{
+  color: var(--md-sys-color-on-surface-variant);
+  font-family: var(--md-font-body);
+  font-weight: 500;
 }
 
-.nav-link {
-    font-weight: 500;
-    border-radius: 999px;
-    padding-inline: 1rem !important;
-    color: var(--md-sys-color-on-surface);
+/* Nav links as “quiet” text buttons */
+.nav-link{
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface-variant) !important;
+  border-radius: 999px;
+  padding: .45rem .8rem !important;
+  transition: background var(--md-t) var(--md-ease), color var(--md-t) var(--md-ease);
 }
-
 .nav-link:hover,
-.nav-link:focus {
-    background-color: rgba(208, 188, 255, 0.16);
-    color: var(--md-sys-color-primary);
+.nav-link:focus{
+  background: rgba(26,115,232,.08);
+  color: var(--md-sys-color-on-surface) !important;
+  text-decoration: none;
+}
+.nav-link.active,
+.nav-link[aria-current="page"]{
+  background: rgba(26,115,232,.12);
+  color: var(--md-sys-color-on-surface) !important;
 }
 
-.navbar-toggler {
-    color: var(--md-sys-color-on-surface);
+/* 3) Hero */
+.hero-section{
+  padding-top: 6.5rem;
+  padding-bottom: 3rem;
 }
 
-/* Hero */
-.hero-section {
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+.hero-card{
+  border-radius: var(--md-radius-xl);
+  background: var(--md-sys-color-surface);
+  border: 1px solid var(--md-sys-color-outline);
+  box-shadow: none; /* docs look is flatter */
+  position: relative;
+  overflow: hidden;
 }
 
-.hero-card {
-    border-radius: var(--md-radius-xl);
-    background:
-        radial-gradient(circle at top left, rgba(208, 188, 255, 0.18) 0, transparent 55%),
-        radial-gradient(circle at bottom right, rgba(3, 218, 198, 0.12) 0, transparent 55%),
-        #1C1B20;
-    box-shadow: var(--md-shadow-level2);
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(147, 143, 153, 0.4);
+/* very light “docs” top accent line */
+.hero-card::before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-sys-color-primary), color-mix(in srgb, var(--md-sys-color-primary) 40%, white));
+  opacity:.9;
 }
 
-.hero-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        radial-gradient(circle at 0% 0%, rgba(255,255,255,0.06) 0, transparent 55%),
-        radial-gradient(circle at 100% 0%, rgba(3, 218, 198, 0.16) 0, transparent 55%);
-    mix-blend-mode: screen;
-    pointer-events: none;
+.hero-title{
+  font-family: var(--md-font-sans);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  font-size: clamp(2.15rem, 4.4vw, 3.2rem);
+  color: var(--md-sys-color-on-surface);
 }
 
-.hero-title {
-    font-family: "Roboto Flex", "Roboto", system-ui, sans-serif;
-    font-weight: 700;
-    font-size: clamp(2.4rem, 5vw, 3.4rem);
-    letter-spacing: 0.02em;
+.hero-subtitle{
+  font-family: var(--md-font-body);
+  font-size: .95rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--md-sys-color-on-surface-variant);
+  text-transform: none; /* more docs-like */
 }
 
-.hero-subtitle {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.16em;
-    color: rgba(230, 224, 233, 0.8);
+/* Selected companies chips */
+.primary-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  border-radius: 999px;
+  padding: .35rem .8rem;
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-primary) 22%, var(--md-sys-color-outline));
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-transform: none;
+}
+.primary-chip .material-symbols-outlined{
+  font-size: 1.05rem;
 }
 
-.primary-chip {
-    display: inline-flex;
-    align-items: center;
-    border-radius: 999px;
-    padding: 0.35rem 0.9rem;
-    background-color: rgba(208, 188, 255, 0.16);
-    color: var(--md-sys-color-primary);
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+/* 4) Section titles */
+.md-section-title{
+  font-family: var(--md-font-sans);
+  font-size: 1.65rem;
+  font-weight: 750;
+  letter-spacing: -.01em;
+  margin-bottom: 1.25rem;
+  color: var(--md-sys-color-on-surface);
 }
 
-.primary-chip .material-symbols-outlined {
-    font-size: 1rem;
-    margin-right: 0.3rem;
+/* 5) Cards (Projects etc.) */
+.md-card{
+  background: var(--md-sys-color-surface);
+  border-radius: var(--md-radius-lg);
+  border: 1px solid var(--md-sys-color-outline);
+  box-shadow: none;
+  padding: 1.5rem;
+  height: 100%;
+  display:flex;
+  flex-direction:column;
+  transition: box-shadow var(--md-t) var(--md-ease), transform var(--md-t) var(--md-ease);
 }
 
-/* Section titles / cards */
-.md-section-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+/* If the Selected companies block also uses .md-card — disable hover elevation there */
+#selected-companies .md-card:hover,
+.selected-companies .md-card:hover,
+#companies .md-card:hover,
+.companies-section .md-card:hover{
+  box-shadow: none;
+  transform: none;
 }
 
-.md-card {
-    background: radial-gradient(circle at top left, rgba(208,188,255,0.12) 0, transparent 60%),
-                #211F26;
-    border-radius: var(--md-radius-lg);
-    border: 1px solid rgba(147, 143, 153, 0.6);
-    box-shadow: var(--md-shadow-level1);
-    padding: 1.5rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.md-card-header{
+  display:flex;
+  align-items:center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.md-card-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.brand-logo{
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--md-sys-color-surface-variant);
+  border: 1px solid var(--md-sys-color-outline-variant);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.brand-logo img{ max-width:100%; max-height:100%; object-fit: cover; }
+
+.md-card-title{
+  font-family: var(--md-font-sans);
+  font-size: 1.05rem;
+  font-weight: 750;
+  color: var(--md-sys-color-on-surface);
+}
+.md-card-subtitle{
+  font-size: .92rem;
+  color: var(--md-sys-color-on-surface-variant);
 }
 
-.brand-logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 20px;
-    background-color: #2B2832;
-    display: inline-flex;
-    justify-content: center;
-    overflow: hidden;
+.md-supporting-text{
+  font-size: .98rem;
+  line-height: 1.55;
+  color: var(--md-sys-color-on-surface);
 }
 
-.brand-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+/* Pills look like dev site tags */
+.md-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  padding: .25rem .7rem;
+  border-radius: 999px;
+  border: 1px solid var(--md-sys-color-outline);
+  background: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: .82rem;
+  font-weight: 600;
 }
 
-.md-card-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--md-sys-color-on-surface);
+/* 6) Buttons (Message me / View projects) */
+.btn-md-primary,
+.btn-md-tonal{
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  font-size: .9rem;
+  padding: .65rem 1.25rem;
+  border: 1px solid transparent;
+  transition: background var(--md-t) var(--md-ease),
+              box-shadow var(--md-t) var(--md-ease),
+              transform var(--md-t) var(--md-ease),
+              border-color var(--md-t) var(--md-ease);
 }
 
-.md-card-subtitle {
-    font-size: 0.9rem;
-    color: rgba(230, 224, 233, 0.75);
+/* Filled (primary) */
+.btn-md-primary{
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  box-shadow: none;
+  letter-spacing: 0.04em;
+}
+.btn-md-primary:hover{
+  background: color-mix(in srgb, var(--md-sys-color-primary) 80%, #fff);
+  color: var(--md-sys-color-on-primary);
 }
 
-.md-supporting-text {
-    font-size: 0.9rem;
-    color: rgba(230, 224, 233, 0.88);
+/* Tonal (container) */
+.btn-md-tonal{
+  background: var( --md-sys-color-background);
+  color: var(--md-sys-color-on-primary-container);
+  border-color: color-mix(in srgb, var(--md-sys-color-primary) 20%, var(--md-sys-color-outline));
+  box-shadow: none;
+  letter-spacing: 0.04em;
+}
+.btn-md-tonal:hover{
+  color: var(--md-sys-color-on-primary-container);
+  border-color: color-mix(in srgb, var(--md-sys-color-primary) 20%, var(--md-sys-color-outline));
 }
 
-.md-pill {
-    display: inline-flex;
-    padding: 0.25rem 0.8rem;
-    border-radius: 999px;
-    border: 1px solid rgba(147, 143, 153, 0.8);
-    font-size: 0.8rem;
-    align-items: center;
-    gap: 0.35rem;
-    color: rgba(230, 224, 233, 0.9);
+/* Ripple-ish state layer */
+.btn-md-primary::after,
+.btn-md-tonal::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transition: opacity var(--md-t) var(--md-ease);
+  pointer-events:none;
+}
+.btn-md-primary::after{ background: rgba(255,255,255,.10); }
+.btn-md-tonal::after{ background: rgba(26,115,232,.08); }
+.btn-md-primary:hover::after,
+.btn-md-tonal:hover::after{ opacity:1; }
+
+/* Text link buttons (used around cards) */
+.btn-link{
+  color: var(--md-sys-color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: .5rem .75rem;
+}
+.btn-link:hover{
+  background: rgba(26,115,232,.08);
+  text-decoration: none;
 }
 
-/* Buttons */
-.btn-md-primary {
-    background-color: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
-    border-radius: 999px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    padding: 0.7rem 1.6rem;
-    border: none;
+/* 7) About / Contact blocks */
+.about-card,
+.contact-card{
+  border-radius: var(--md-radius-xl);
+  border: 1px solid var(--md-sys-color-outline);
+  background: var(--md-sys-color-surface);
+  box-shadow: none;
 }
 
-.btn-md-primary:hover {
-    background-color: #B69DF8;
-    color: var(--md-sys-color-on-primary);
+.about-card p{
+  color: var(--md-sys-color-on-surface);
+  line-height: 1.6;
 }
 
-.btn-md-tonal {
-    background-color: var(--md-sys-color-secondary-container);
-    color: var(--md-sys-color-on-secondary-container);
-    border-radius: 999px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    padding: 0.7rem 1.6rem;
-    border: none;
+.contact-photo{
+  width: 112px;
+  height: 112px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--md-sys-color-outline);
+  background: var(--md-sys-color-surface-variant);
+  box-shadow: none;
+}
+.contact-photo img{ width:100%; height:100%; object-fit:cover; }
+
+.contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  color: var(--md-sys-color-on-surface);
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-link:hover{
+  color: var(--md-sys-color-primary);
+  text-decoration: underline;
 }
 
-.btn-md-tonal:hover {
-    background-color: #5C556B;
-    color: var(--md-sys-color-on-secondary-container);
+/* 8) Footer */
+footer{
+  border-top: 1px solid var(--md-sys-color-outline);
+  margin-top: 3rem;
+  padding-block: 1.5rem;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: .9rem;
 }
 
-.btn-link {
-    color: var(--md-sys-color-primary);
+/* 9) Modal (if used) */
+.modal-content{
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-radius-xl);
+  box-shadow: var(--md-shadow-level2);
 }
 
-.btn-link:hover {
-    color: #EADDFF;
+/* 10) Anchors offset under sticky top bar */
+#projects, #about, #contact{
+  scroll-margin-top: 96px;
 }
 
-/* About */
-.about-card {
-    border-radius: var(--md-radius-lg);
-    box-shadow: var(--md-shadow-level1);
-    border: 1px solid rgba(147, 143, 153, 0.6);
-    background: radial-gradient(circle at top right, rgba(3,218,198,0.12) 0, transparent 60%),
-                #211F26;
+/* 11) Icon alignment */
+.material-symbols-outlined{
+  vertical-align: -0.18em;
 }
 
-.about-card p {
-    font-size: 0.95rem;
-    color: rgba(230, 224, 233, 0.88);
+/* Stronger subtle elevation for Selected companies */
+.hero-section .md-card {
+    box-shadow:
+        0 2px 4px rgba(60, 64, 67, 0.14),
+        0 4px 12px rgba(60, 64, 67, 0.10);
 }
 
-/* Contact / Message */
-.contact-card {
-    border-radius: var(--md-radius-lg);
-    box-shadow: var(--md-shadow-level1);
-    border: 1px solid rgba(147, 143, 153, 0.7);
-    background:
-        radial-gradient(circle at top left, rgba(208, 188, 255, 0.14) 0, transparent 55%),
-        #2B2834;
-    color: var(--md-sys-color-on-primary-container);
+/* Stronger subtle elevation for Focus areas */
+.about-card .md-card {
+    box-shadow:
+        0 2px 4px rgba(60, 64, 67, 0.14),
+        0 4px 12px rgba(60, 64, 67, 0.10);
 }
 
-.contact-photo {
-    width: 112px;
-    height: 112px;
-    border-radius: 32px;
-    overflow: hidden;
-    box-shadow: var(--md-shadow-level2);
-    border: 1px solid rgba(147, 143, 153, 0.6);
-}
-
-.contact-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--md-sys-color-on-primary-container);
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    border-top: 1px solid rgba(147, 143, 153, 0.5);
-    padding-block: 1.5rem;
-    font-size: 0.85rem;
-    color: rgba(230, 224, 233, 0.7);
-    margin-top: 3rem;
-    background: #141218;
-}
-
-/* Modals */
-.modal-content {
-    background-color: #211F26;
-    color: var(--md-sys-color-on-surface);
-    border: 1px solid rgba(147, 143, 153, 0.7);
-}
-
-.modal-header .btn-close {
-    filter: invert(1) grayscale(1);
-}
-
-/* Small helpers */
-.material-symbols-outlined {
-    vertical-align: middle;
-}
-
-#projects,
-#about,
-#contact {
-    scroll-margin-top: 96px;
+.btn-md-primary:hover,
+.btn-md-primary:focus,
+.btn-md-tonal:hover,
+.btn-md-tonal:focus{
+    text-decoration: none !important;
 }
